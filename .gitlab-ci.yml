@@ -2,14 +2,7 @@ image: registry.gitlab.com/gbraad/byo-atomic:latest
 
 pages:
   script:
-  #- polipo
-  #- pushd /srv/repo
-  #- python -m SimpleHTTPServer &
-  #- popd
-  - pushd /home/working
-  #- rpm-ostree compose tree --proxy=http://127.0.0.1:8123 --repo=/srv/repo fedora-atomic/fedora-atomic-docker-host.json
-  - rpm-ostree compose tree --repo=/srv/repo fedora-atomic/fedora-atomic-docker-host.json
-  - popd
+  - ./compose.sh
   - mv /srv/repo public
   artifacts:
     paths:
