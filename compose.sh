@@ -11,4 +11,6 @@ rpm-ostree compose tree \
     --repo=/srv/repo \
     ./fedora-atomic/fedora-atomic-docker-host.json
 
+find /srv/repo/ -type f | ./genindex.sh > /srv/repo/index.html
+
 popd
