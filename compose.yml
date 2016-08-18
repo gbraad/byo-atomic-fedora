@@ -6,11 +6,11 @@
   - name: Clone Fedora-Atomic buildscripts
     git: >-
       repo=https://git.fedorahosted.org/git/fedora-atomic.git
-      version=f23
+      version=f24
       depth=1
-      dest=/home/working/fedora-atomic
+      dest=/workspace/fedora-atomic
 
   - name: Compose Fedora-Atomic tree
     command: >-
-      chdir=/home/working/fedora-atomic/
+      chdir=/workspace/fedora-atomic/
       rpm-ostree compose tree --repo=/srv/repo ./fedora-atomic-docker-host.json

@@ -1,9 +1,9 @@
 #!/bin/sh
 
-pushd /home/working
+pushd /workspace
 
 git clone https://git.fedorahosted.org/git/fedora-atomic.git \
-    -b f23 \
+    -b f24 \
     --depth 1 \
     fedora-atomic
 
