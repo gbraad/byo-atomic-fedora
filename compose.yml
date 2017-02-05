@@ -5,8 +5,8 @@
   tasks:
   - name: Clone Fedora-Atomic buildscripts
     git: >-
-      repo=https://git.fedorahosted.org/git/fedora-atomic.git
-      version=f24
+      repo=https://pagure.io/fedora-atomic.git
+      version=f25
       depth=1
       dest=/workspace/fedora-atomic
 
